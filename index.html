@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arthur Zhao's Home Page</title>
+		<link rel="stylesheet" type="text/css" href="mainStyle.css"/>
+	</head>
+
+	<body>
+		<div id="container">
+
+			<div id="header" class="mainSection">
+				<h1><a href="http://www.mcgill.ca"><img id="MGLogo" src="./images/McGill.png" alt="McGillLogo"width="300", height="80"/></a><span id="title">Arthur Zhao</span></h1>
+				
+			</div>
+
+			<div id="frame" class="mainSection">
+ 
+				<div id="menu">
+					<button id="menuB" class="dropB">Menu</button>
+					<div id="menuDrop" class="drop-Content">
+						<a href="http://www.google.ca">About</a>
+						<a href="http://www.google.ca">Education</a>
+						<a href="http://www.google.ca">Hobbies</a>
+						<a href="http://www.google.ca">Resume</a>
+						<a href="http://www.google.ca">Change Language</a>
+					</div>
+				</div>
+
+				<div id="sideBar">
+					<div id="Picture">
+						<a href="http://www.google.ca"><img src="./images/Profile.png" alt="Profile"width="200",height="300"/></a>
+					</div>
+					
+					<div id="Contact">
+						<h4>Contact Information</h4>
+						<ul>
+							<li>E-mail: </li>
+							<li>Phone Number: </li>
+							<li>Facebook: </li>
+							<li>LinkedIn: </li>
+							<li>Twitter: </li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="content">
+					<h3>Main Content</h3>
+					<p>Hi, Welcome to Arthur Zhao's Homepage!</p>
+					<p>In here you'll find sections on the menu bar, please press a button to proceed</p>
+				</div>
+			</div>
+
+			<div id="footer" class="mainSection">
+				<h5>Copyright: &copy 2016 Arthur Zhao</h5>
+			</div>
+
+		</div>
+
+		<script>
+			document.getElementById("menuB").onclick = function(){dropDAction()};
+
+			function dropDAction() {
+    			document.getElementById("menuDrop").classList.toggle("show");
+			}
+		window.onclick = function(event) {
+			if (!event.target.matches("#menuB")) {
+  		        document.getElementById("menuDrop").classList.remove("show");
+ 		 }
+}
+		</script>
+	</body>
+
+
+
+</html>
